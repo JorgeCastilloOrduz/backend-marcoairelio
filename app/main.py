@@ -10,7 +10,8 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8501"],  # origen de tu frontend
+    allow_origins=["http://localhost:8501",
+                   "https://fastidious-melomakarona-494265.netlify.app"],  # origen de tu frontend
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
